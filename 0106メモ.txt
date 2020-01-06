@@ -3,7 +3,7 @@ C:\Repos\JinCreek.Server>docker exec -it dotnet bash -- 执行一个 docker cont
 root@dotnet:/app/Common# dotnet tool install --global dotnet-ef -- 对一个contianer 安装 EFCore
 root@dotnet:/app/Common# dotnet ef migrations script -o ddl.sql -- 执行EF migrations 生产sql
 root@dotnet:/app/Common# dotnet ef database update -- 更新数据库
-
+C:\Users\81804\JinCreek.Server>docker-compose rm --stop dotnet
 
 
 C:\Repos\JinCreek.Server>docker exec -it mariadb bash

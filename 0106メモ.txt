@@ -1,0 +1,19 @@
+C:\Repos\JinCreek.Server>docker-compose up -d dotnet -- 创建一个docker contianer 
+C:\Repos\JinCreek.Server>docker exec -it dotnet bash -- 执行一个 docker contianer
+root@dotnet:/app/Common# dotnet tool install --global dotnet-ef -- 对一个contianer 安装 EFCore
+root@dotnet:/app/Common# dotnet ef migrations script -o ddl.sql -- 执行EF migrations 生产sql
+root@dotnet:/app/Common# dotnet ef database update -- 更新数据库
+
+
+
+C:\Repos\JinCreek.Server>docker exec -it mariadb bash
+root@mariadb:/# mysql -uroot -h localhost mdb  -- 进入mariadb 的数据库
+
+
+docker ps: 查看当前运行的容器
+docker ps -a:查看所有容器，包括停止的
+docker stop [NAME]/[CONTAINER ID]:将容器退出。
+docker kill [NAME]/[CONTAINER ID]:强制停止一个容器
+docker rm [NAME]/[CONTAINER ID]:不能够删除一个正在运行的容器，会报错。需要先停止容器。
+Docker rmi image id (当容器存在的时候删不掉，应该先删除镜像再删除容器)
+

@@ -1,0 +1,1 @@
+ git clone https://gushiken:ok23nywqulynzcpqfimnzvhsrhd23zi4xgp2bnvoyszflltreflq@dev.azure.com/initialpoint/JinCreek.Server/_git/JinCreek.Server

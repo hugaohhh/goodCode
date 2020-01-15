@@ -21,3 +21,9 @@ docker kill [NAME]/[CONTAINER ID]:强制停止一个容器
 docker rm [NAME]/[CONTAINER ID]:不能够删除一个正在运行的容器，会报错。需要先停止容器。
 Docker rmi image id (当容器存在的时候删不掉，应该先删除镜像再删除容器)
 
+dotnet ef migrations add InitialCreate -c MainDbContext
+
+root@mariadb:/# mysql -uroot -h localhost < /docker-entrypoint-initdb.d/10_create_database.sql
+root@mariadb:/# mysql -uroot -h localhost < /docker-entrypoint-initdb.d/20_create_database.sql
+root@mariadb:/# mysql -uroot -h localhost < /docker-entrypoint-initdb.d/21_schema.sql
+

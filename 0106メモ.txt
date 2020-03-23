@@ -27,3 +27,7 @@ root@mariadb:/# mysql -uroot -h localhost < /docker-entrypoint-initdb.d/10_creat
 root@mariadb:/# mysql -uroot -h localhost < /docker-entrypoint-initdb.d/20_create_database.sql
 root@mariadb:/# mysql -uroot -h localhost < /docker-entrypoint-initdb.d/21_schema.sql
 
+tail -f /var/log/mysql/query.log
+
+mysql -uroot -h 127.0.0.1 --database=mdb --execute='select * from AuthenticationState' > /docker-entrypoint-initdb.d/AuthenticationState.csv;
+

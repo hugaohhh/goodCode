@@ -31,3 +31,5 @@ tail -f /var/log/mysql/query.log
 
 mysql -uroot -h 127.0.0.1 --database=mdb --execute='select * from AuthenticationState' > /docker-entrypoint-initdb.d/AuthenticationState.csv;
 
+PL/SQL教程  https://www.yiibai.com/plsql/plsql_functions.html#article-start
+

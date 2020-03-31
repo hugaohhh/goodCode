@@ -33,3 +33,5 @@ mysql -uroot -h 127.0.0.1 --database=mdb --execute='select * from Authentication
 
 PL/SQL教程  https://www.yiibai.com/plsql/plsql_functions.html#article-start
 
+indigo slack 地址 indigocorp.slack.com 密码 kokou123456
+k-ko@indigo.co.jp 密码 Kokou123456
